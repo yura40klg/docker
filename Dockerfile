@@ -1,5 +1,5 @@
 FROM tomcat:9.0
-RUN apt-get update &&  apt-get install default-jdk -y &&  apt-get install maven>
+RUN apt-get update &&  apt-get install default-jdk -y &&  apt-get install maven -y
 WORKDIR /var/hw/
 ADD boxfuse-sample-java-war-hello  /var/hw
 RUN cd /var/hw/
