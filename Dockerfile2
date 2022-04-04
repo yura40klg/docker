@@ -1,4 +1,4 @@
-ROM ubuntu
+FROM ubuntu
 RUN apt-get update &&  apt-get install default-jdk -y &&  apt-get install maven -y && apt-get install wget -y
 WORKDIR /var/hw/
 # Добавляем папку с исходниками с хост машины, используя инструкцию ADD 
